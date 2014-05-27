@@ -892,7 +892,7 @@ function buildPage(response, data) {
     
     selectPart += "</select>\n<br>\n<button class='btn btn-primary' id='loadButton'>Load Song</button><input type='hidden' id='loadedSongName' value=''/><hr>\n";
     
-    local mmlPart = "<form role='form' id='stateForm' action="+http.agenturl()+">\n<div class='form-group'>\n<label for='state'>MML</label>\n<div id='stateEditor' class='form-control'>"+state+"</div>\n<textarea id='state' name='state' style='display: none;'></textarea><p class='help-block'><a href='https://github.com/djbouche/implay'>Reference</a></p></div>\n<br/>\n<button class='btn btn-primary' id='playButton'>Play Song</button>\n<button class='btn btn-success' id='saveButton'>Save Song</button>\n<hr>\n";
+    local mmlPart = "<form role='form' id='stateForm' action="+http.agenturl()+">\n<div class='form-group'>\n<label for='state'>MML</label>\n<div id='stateEditor' class='form-control'>"+state+"</div>\n<textarea id='state' name='state' style='display: none;'></textarea><p class='help-block'><a href='https://github.com/djbouche/implay2'>Reference</a></p></div>\n<br/>\n<button class='btn btn-primary' id='playButton'>Play Song</button>\n<button class='btn btn-success' id='saveButton'>Save Song</button>\n<hr>\n";
 
     local tokensPart = "";
     if ("tokens" in data) {
