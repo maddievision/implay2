@@ -8,6 +8,8 @@ The syntax is a very simplified derivative of [MML](http://en.wikipedia.org/wiki
 * To make a note sharp (+1 half-step or semitone) add a `+` or `s` (eg C# is `c+` or `cs`)
 * `/` rest note
 * `.` extends the previous note
+* `,` acts as a musical dot (e.g., `l8c.` is a dotted eigth note C)
+* `\` repeats the previously played note (applied after transpose)
 * `l<length>` sets note length division. Defaults to 8
   `l4` is quarter note, `l8` is eigth note, `l16` sixteenth, etc.
 * `>` increases current octave by 1.  You can increase by more than one by using `>n` where n is the number of octaves.
@@ -26,6 +28,8 @@ The syntax is a very simplified derivative of [MML](http://en.wikipedia.org/wiki
 * `p<duty>` sets pulse duty to `<duty>` * 0.1.
   `p5` is a square wave. Defaults to 5.
 * `x<tune>` tunes the channel by adding `<tune>`Hz to every note. Defaults to 0.
+* `y<semitones>` transposes the channel by `<semitones>` semitones, prefix with `-` for negative numbers. Defaults to 0.
+* `y++` `y--` `y+=<semitones>` `y-=<semitones>` increments/decrements the current transpose value.
 * `#<comment>` is a comment that will be ignored.
 
 ### Multi-channel
