@@ -24,7 +24,7 @@ The syntax is a very simplified derivative of [MML](http://en.wikipedia.org/wiki
 * `o<octave>` sets octave (1 to 7). Defaults to 5
 * `t<tempo>` sets tempo in BPM (32 to 255). Defaults to 120
 * `m<factor>` sets gate time, which makes the note length: length \* (1 - (factor * 0.1)). 
-  Larger values give shorter stacatto notes. Defaults to 0 (legato).
+  Larger values give shorter stacatto notes. Defaults to 1.
 * `p<duty>` sets pulse duty to `<duty>` * 0.1.
   `p5` is a square wave. Defaults to 5.
 * `x<tune>` tunes the channel by adding `<tune>`Hz to every note. Defaults to 0.
