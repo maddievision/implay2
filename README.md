@@ -49,4 +49,3 @@ Sends a C major chords to four piezos
 * `[ <MML A...> : <MML B...> ]<n>` defines a loop that will play the inner MML A and MML B `<n>` times, but on the final loop, MML B will be skipped.
 * `@<macroname>{ <MML...> }` defines a macro named `<macroname>` with the MML contents inside the braces `{` `}`.  Macros are global across all channels, and definitions are read in order of apperance.
 * `@<macroname>` calls previously defined macro, inserting it's contents.
-* `$<songname>` imports `<songname>` from Firebase into the channel (thus, only single channel songs work here)
